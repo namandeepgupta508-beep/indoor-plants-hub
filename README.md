@@ -71,3 +71,4 @@ This is a learning project 💻. Suggestions and improvements are always welcome
 ---
 
 ⭐ If you like this project, don’t forget to **star the repo**!  
+🌐 **Live Demo:** [Hub Plant Website](https://namandeepgupta508-beep.github.io/indoor-plants-hub/)
