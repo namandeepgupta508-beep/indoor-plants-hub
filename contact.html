@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Hub Plant</title>
+  <meta name="description" content="Contact Hub Plant — send a message or request.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="brand">Hub Plant 🌱</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="plants.html">Plants</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="header" style="background:var(--green);">
+  <h1>Contact Hub Plant</h1>
+  <p>I'd love to hear from you — questions, suggestions or collabs.</p>
+</header>
+
+<main>
+  <div class="container">
+    <div class="card" style="max-width:700px;margin:auto">
+      <form id="contactForm" onsubmit="sendEmail(event)" class="form-grid">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <div style="text-align:center">
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+      <p style="color:var(--muted);font-size:0.95rem;margin-top:12px;text-align:center">
+        This form opens your email app. If you prefer a web form, we can set up Formspree later.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2025 Hub Plant | Made with ❤️ by Namandeep Gupta
+</footer>
+
+<script>
+function sendEmail(e){
+  e.preventDefault();
+  const f = document.getElementById('contactForm');
+  const name = encodeURIComponent(f.name.value.trim());
+  const email = encodeURIComponent(f.email.value.trim());
+  const subject = encodeURIComponent(f.subject.value.trim());
+  const body = encodeURIComponent(`Name: ${f.name.value}\nEmail: ${f.email.value}\n\n${f.message.value}`);
+  window.location.href = `mailto:namandeepgupta508@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
+
+</body>
+</html>
