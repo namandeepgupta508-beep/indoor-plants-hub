@@ -1,99 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hub Plant 🌱</title>
-  
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  
-  <!-- Style -->
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0f7e9, #f5fff9);
-      color: #333;
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem;
-      background: #4CAF50;
-      color: white;
-      border-radius: 0 0 20px 20px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .card {
-      background: white;
-      padding: 1.5rem;
-      margin: 1rem auto;
-      border-radius: 15px;
-      max-width: 500px;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #4CAF50;
-      color: white;
-      margin-top: 2rem;
-      border-radius: 20px 20px 0 0;
-    }
-
-    button {
-      background: #4CAF50;
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #388E3C;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hub Plant 🌱 — Indoor Plants & Care Tips</title>
+  <meta name="description" content="Hub Plant: beginner-friendly indoor plant care tips, plant recommendations and gardening ideas.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to Hub Plant 🌱</h1>
-    <p>Let’s grow something amazing together!</p>
-  </header>
+<nav>
+  <div class="nav-inner">
+    <div class="brand">Hub Plant 🌱</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="plants.html">Plants</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <main>
-    <div class="card">
+<header class="header" style="background:var(--green);">
+  <h1>Welcome to Hub Plant 🌱</h1>
+  <p>Let’s grow something amazing together — plant care tips for beginners.</p>
+</header>
+
+<main>
+  <div class="container">
+    <div class="card" style="text-align:center">
       <h2>About This Website</h2>
-      <p>This is my first website, built with love for nature 🌿.  
-      Here you will find plant care tips, gardening ideas, and more.</p>
-      <button onclick="alert('Thanks for visiting Hub Plant! 🌱')">Click Me</button>
+      <p style="color:var(--muted);max-width:760px;margin:10px auto;">
+        Hub Plant is a practice project where I build small, SEO-friendly pages about indoor plants.
+        Explore plant guides and learn simple care tips to keep your home green.
+      </p>
+      <a class="btn" href="plants.html">Explore Plants</a>
+      <a class="btn secondary" href="about.html" style="margin-left:12px">Learn More</a>
     </div>
-  </main>
+  </div>
+</main>
 
-  <footer>
-    <p>© 2025 Hub Plant | Made with ❤️ by Me</p>
-  </footer>
+<footer>
+  © 2025 Hub Plant | Made with ❤️ by Namandeep Gupta
+</footer>
 
 </body>
 </html>
