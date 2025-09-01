@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://namandeepgupta508-beep.github.io/indoor-plants-hub/sitemap.xml
